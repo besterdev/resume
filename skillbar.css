@@ -1,0 +1,84 @@
+
+body{
+    font-family: 'Kanit', sans-serif;
+  }
+  @keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-webkit-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-moz-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-o-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  
+  .bar{
+    background-color: rgb(172, 165, 165);
+    padding: 3px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    font-size: 10px;
+    color: #FFF;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  }
+  .bar::before{
+    content:  attr(data-skill);
+    display: inline-block;
+    padding: 5px 5px 5px 10px;
+    border-radius: inherit;
+    animation: load 2s 0s;
+    -webkit-animation: load 2s 0s;
+    -moz-animation: load 2s 0s;
+    -o-animation: load 2s 0s;
+  }
+  
+  .bar.front::before{
+    background-color: #ffcc33;
+  }
+  .bar.back::before{
+    background-color: #a6cfe3;
+  }
+  
+  .bar.html::before{
+    /* background-color: #e67e22; */
+    background-color: #8C622A;
+    width: calc(90% - 10px);
+  }
+  .bar.css::before{
+    /* background-color: #3498db; */
+    background-color: #483C3C;
+    width: calc(60% - 10px);
+  }
+  .bar.javascript::before{
+    /* background-color: #ffcc33; */
+    background-color: #1E1810;
+    width: calc(50% - 10px);
+  }
+  .bar.php::before{
+    /* background-color: #911cdf; */
+    background-color: #8C622A;
+    width: calc(40% - 10px);
+  }
+  .bar.sql::before{
+    /* background-color: #e933d1; */
+    background-color: #483C3C;
+    width: calc(50% - 10px);
+  }
+  .bar.bootstrap::before{
+    /* background-color: #b82eee; */
+    background-color: #1E1810;
+    width: calc(70% - 10px);
+  }
+  

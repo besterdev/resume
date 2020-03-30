@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #33383E;
+    background-color: #CBD1D7;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 100%;
+    height: 100%;
+    margin-left: 20%;
+}
+
+.area-lift {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(3, 300px);
+    margin: 1em 0;
+    padding: 0 3% 0 3%;
+    border-right: 3px solid rgb(167, 163, 163);
+    height: 1000px;
+}
+
+.lift-top {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-gap: 30px;
+}
+
+.img-profile {
+    margin: 0em;
+}
+
+.img-profile img {
+    border: 2px solid #B99A7B;
+    background: #535E6E;
+    width: 250px;
+    border-radius: 50%;
+}
+
+.img-history {}
+
+.history strong {
+    font-size: 30px;
+    font-weight: 500px;
+}
+
+.history p {
+    font-size: 16px;
+}
+
+.history span {
+    font-size: 20px;
+    font-weight: 700px;
+}
+
+.profile {}
+
+.profile strong {
+    font-size: 24px;
+    font-weight: 500px;
+    padding-bottom: 7px;
+    border-bottom: 5px solid #B99A7B;
+}
+
+.profile p {
+    padding-top: 7px;
+    font-size: 16px;
+}
+
+.skills {}
+
+.skills strong {
+    font-size: 24px;
+    font-weight: 500px;
+    padding-bottom: 7px;
+    border-bottom: 5px solid #B99A7B;
+}
+
+.skills p {
+    padding-top: 7px;
+    font-size: 16px;
+}
+
+.font-skill {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 100%;
+    height: 100%;
+}
+
+.font-skill p {
+    font-size: 16px;
+}
+
+.skill-titel {}
+
+.area-right {
+    display: grid;
+    grid-template-rows: repeat(1, 300px);
+    margin: 1em 0;
+    padding: 30px 30px;
+    width: 50%;
+}
+
+.experience {}
+
+.experience strong {
+    font-size: 24px;
+    font-weight: 500px;
+    padding-bottom: 7px;
+    border-bottom: 5px solid #B99A7B;
+}
+
+.experience h4 {
+    padding-top: 21px;
+}
+
+.experience p {
+    padding-top: 7px;
+    font-size: 16px;
+}
+
+.references {
+    width: 70%;
+}
+
+.references-heading strong {
+    font-size: 24px;
+    font-weight: 500px;
+    padding-bottom: 7px;
+    border-bottom: 5px solid #B99A7B;
+}
+
+.references-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    text-align: center;
+}
+
+.references-item {
+    border-radius: 100%;
+    border: 2px solid rgb(172, 165, 165);
+    padding: 15px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.references-item i {
+    font-size: 3rem;
+    color: #1E1810;
+    background: none;
+}
+
+.references-item:hover {
+    border: 2px solid#B99A7B;
+    background: #8C622A;
+}
+
+.references-item:hover i {
+    font-size: 3rem;
+    color: #fff;
+    background: none;
+}
